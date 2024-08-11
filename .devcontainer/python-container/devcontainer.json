@@ -4,6 +4,17 @@
   "service": "python-app",
   "shutdownAction": "none",
   "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {
+      "version": "3.8.0"
+    },
+    "ghcr.io/devcontainers-contrib/features/ruff:1": {
+      "version": "0.5.7"
+    },
+    "ghcr.io/devcontainers-contrib/features/mypy:2": {
+      "version": "1.11.1"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -27,7 +38,7 @@
         "tamasfe.even-better-toml"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "${workspaceFolder}/python-src/.venv/bin/python",
+        //"python.defaultInterpreterPath": "${workspaceFolder}/python-src/.venv/bin/python",
         "python.venvFolders": ["**/.venv"],
         "[python]": {
           "editor.defaultFormatter": "charliermarsh.ruff",
@@ -37,7 +48,7 @@
           },
           "editor.formatOnSave": true
         },
-        "mypy.dmypyExecutable": "${workspaceFolder}/python-src/.venv/bin/mypy",
+        //"mypy.dmypyExecutable": "${workspaceFolder}/python-src/.venv/bin/mypy",
         "mypy.runUsingActiveInterpreter": true,
         "files.insertFinalNewline": true,
         "files.trimTrailingWhitespace": true,
