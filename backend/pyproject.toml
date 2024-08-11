@@ -1,0 +1,27 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "JojiKoike", email = "5671422+JojiKoike@users.noreply.github.com" }
+]
+dependencies = [
+    "djangorestframework>=3.15.2",
+    "psycopg2-binary>=2.9.9",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/backend"]
