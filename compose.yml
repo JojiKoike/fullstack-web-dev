@@ -19,7 +19,6 @@ services:
     command: sleep infinity
     links:
       - python-app
-      - golang-app
     # ...
 
   terraform-iac:
