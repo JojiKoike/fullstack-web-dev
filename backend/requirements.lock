@@ -36,6 +36,8 @@ idna==3.7
     # via requests
 isort==5.13.2
     # via backend
+psycopg==3.2.1
+    # via backend
 psycopg-binary==3.2.1
     # via backend
 requests==2.32.3
@@ -51,6 +53,7 @@ typing-extensions==4.12.2
     # via django-stubs
     # via django-stubs-ext
     # via djangorestframework-stubs
+    # via psycopg
 urllib3==2.2.2
     # via requests
     # via types-requests

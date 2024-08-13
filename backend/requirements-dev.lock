@@ -39,6 +39,8 @@ isort==5.13.2
 mypy==1.11.1
 mypy-extensions==1.0.0
     # via mypy
+psycopg==3.2.1
+    # via backend
 psycopg-binary==3.2.1
     # via backend
 requests==2.32.3
@@ -56,6 +58,7 @@ typing-extensions==4.12.2
     # via django-stubs-ext
     # via djangorestframework-stubs
     # via mypy
+    # via psycopg
 urllib3==2.2.2
     # via requests
     # via types-requests
