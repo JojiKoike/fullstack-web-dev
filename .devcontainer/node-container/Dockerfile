@@ -1,7 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/javascript-node:1-18
-
-# Install latest pnpm
-RUN npm install -g pnpm
+FROM mcr.microsoft.com/devcontainers/javascript-node:20-bookworm
 
 WORKDIR /opt
 
