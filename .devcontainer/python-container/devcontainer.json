@@ -7,12 +7,6 @@
   "features": {
     "ghcr.io/devcontainers-contrib/features/pre-commit:2": {
       "version": "3.8.0"
-    },
-    "ghcr.io/devcontainers-contrib/features/ruff:1": {
-      "version": "0.5.7"
-    },
-    "ghcr.io/devcontainers-contrib/features/mypy:2": {
-      "version": "1.11.1"
     }
   },
   "customizations": {
@@ -32,13 +26,13 @@
         "usernamehw.errorlens",
         "yzhang.markdown-all-in-one",
         "seatonjiang.gitmoji-vscode",
-        "matangover.mypy",
+        "ms-python.mypy-type-checker",
         "streetsidesoftware.code-spell-checker",
         "donjayamanne.githistory",
         "tamasfe.even-better-toml"
+
       ],
       "settings": {
-        //"python.defaultInterpreterPath": "${workspaceFolder}/python-src/.venv/bin/python",
         "python.venvFolders": ["**/.venv"],
         "[python]": {
           "editor.defaultFormatter": "charliermarsh.ruff",
@@ -48,8 +42,22 @@
           },
           "editor.formatOnSave": true
         },
-        //"mypy.dmypyExecutable": "${workspaceFolder}/python-src/.venv/bin/mypy",
-        "mypy.runUsingActiveInterpreter": true,
+        "ruff.path": [
+          "${workspaceFolder}/backend/.venv/bin/ruff"
+        ],
+        "ruff.lint.args": [
+          "--config=${workspaceFolder}/backend/pyproject.toml",
+        ],
+        "mypy-type-checker.path": [
+          "${workspaceFolder}/backend/.venv/bin/mypy"
+        ],
+        "mypy-type-checker.args": [
+          "--config=${workspaceFolder}/backend/pyproject.toml"
+        ],
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.completeFunctionParens": true,
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true,
         "files.insertFinalNewline": true,
         "files.trimTrailingWhitespace": true,
         "terminal.integrated.defaultProfile.linux": "zsh",
