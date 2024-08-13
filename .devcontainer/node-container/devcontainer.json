@@ -25,6 +25,12 @@
         "sheltonlouis.astro-snippets"
       ],
       "settings": {
+        "workbench.colorCustomizations": {
+          "titleBar.activeBackground": "#8fc604",
+          "titleBar.activeForeground": "#000000",
+          "activityBar.background": "#8fc604",
+          "activityBar.foreground": "#000000"
+        },
         "files.insertFinalNewline": true,
         "files.trimTrailingWhitespace": true,
         "terminal.integrated.defaultProfile.linux": "zsh",

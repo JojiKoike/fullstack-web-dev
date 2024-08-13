@@ -30,9 +30,14 @@
         "streetsidesoftware.code-spell-checker",
         "donjayamanne.githistory",
         "tamasfe.even-better-toml"
-
       ],
       "settings": {
+        "workbench.colorCustomizations": {
+          "titleBar.activeBackground": "#ffc107",
+          "titleBar.activeForeground": "#000000",
+          "activityBar.background": "#ffc107",
+          "activityBar.foreground": "#000000"
+        },
         "python.venvFolders": ["**/.venv"],
         "[python]": {
           "editor.defaultFormatter": "charliermarsh.ruff",
@@ -42,15 +47,11 @@
           },
           "editor.formatOnSave": true
         },
-        "ruff.path": [
-          "${workspaceFolder}/backend/.venv/bin/ruff"
-        ],
+        "ruff.path": ["${workspaceFolder}/backend/.venv/bin/ruff"],
         "ruff.lint.args": [
           "--config=${workspaceFolder}/backend/pyproject.toml"
         ],
-        "mypy-type-checker.path": [
-          "${workspaceFolder}/backend/.venv/bin/mypy"
-        ],
+        "mypy-type-checker.path": ["${workspaceFolder}/backend/.venv/bin/mypy"],
         "mypy-type-checker.args": [
           "--config=${workspaceFolder}/backend/pyproject.toml"
         ],
