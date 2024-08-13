@@ -12,11 +12,50 @@
 -e file:.
 asgiref==3.8.1
     # via django
+    # via django-stubs
+certifi==2024.7.4
+    # via requests
+charset-normalizer==3.3.2
+    # via requests
 django==5.1
+    # via django-stubs
+    # via django-stubs-ext
     # via djangorestframework
+django-environ==0.11.2
+    # via backend
+django-stubs==5.0.4
+    # via backend
+    # via djangorestframework-stubs
+django-stubs-ext==5.0.4
+    # via django-stubs
 djangorestframework==3.15.2
     # via backend
-psycopg2-binary==2.9.9
+djangorestframework-stubs==3.15.0
     # via backend
+idna==3.7
+    # via requests
+isort==5.13.2
+    # via backend
+mypy==1.11.1
+mypy-extensions==1.0.0
+    # via mypy
+psycopg-binary==3.2.1
+    # via backend
+requests==2.32.3
+    # via djangorestframework-stubs
+ruff==0.5.7
 sqlparse==0.5.1
     # via django
+types-pyyaml==6.0.12.20240808
+    # via django-stubs
+    # via djangorestframework-stubs
+types-requests==2.32.0.20240712
+    # via djangorestframework-stubs
+typing-extensions==4.12.2
+    # via django-stubs
+    # via django-stubs-ext
+    # via djangorestframework-stubs
+    # via mypy
+urllib3==2.2.2
+    # via requests
+    # via types-requests
