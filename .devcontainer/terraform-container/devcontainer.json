@@ -26,6 +26,12 @@
         "discretegames.f5anything"
       ],
       "settings": {
+        "workbench.colorCustomizations": {
+          "titleBar.activeBackground": "#7b42bc",
+          "titleBar.activeForeground": "#000000",
+          "activityBar.background": "#7b42bc",
+          "activityBar.foreground": "#000000"
+        },
         "editor.formatOnPaste": false, // required
         "editor.formatOnType": false, // required
         "editor.formatOnSave": true, // optional
