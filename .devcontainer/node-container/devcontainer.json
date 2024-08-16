@@ -22,7 +22,14 @@
         "tamasfe.even-better-toml",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "sheltonlouis.astro-snippets"
+        "jrebocho.vscode-random",
+        "PulkitGangwar.nextjs-snippets",
+        "dsznajder.es7-react-js-snippets",
+        "csstools.postcss",
+        "pranaygp.vscode-css-peek",
+        "bradlc.vscode-tailwindcss",
+        "ionutvmi.path-autocomplete",
+        "formulahendry.auto-rename-tag"
       ],
       "settings": {
         "workbench.colorCustomizations": {
@@ -43,6 +50,11 @@
         "editor.formatOnSave": true,
         "editor.formatOnPaste": true,
         "editor.formatOnType": true,
+        "editor.quickSuggestions": {
+          "other": "on",
+          "comments": "off",
+          "strings": "on"
+        },
         "editor.codeActionsOnSave": {},
         "[json]": {
           "editor.formatOnSave": false
